@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns="http://code.ryan.com/schema/soaApiEngine"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:tool="http://www.springframework.org/schema/tool"
+	targetNamespace="http://code.ryan.com/schema/soaApiEngine">
+	
+	<xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+	<xsd:import namespace="http://www.springframework.org/schema/beans"/>
+	<xsd:import namespace="http://www.springframework.org/schema/tool"/>
+
+	<xsd:annotation>
+		<xsd:documentation><![CDATA[ Namespace support for the spring soaApiEngine services provided by ryan.kong . ]]></xsd:documentation>
+	</xsd:annotation>
+	
+	
+        <xsd:element name="application" type="applicationType">  
+        </xsd:element>  
+          
+        <xsd:complexType name="applicationType">  
+                <xsd:attribute name="name" type="xsd:string">  
+                </xsd:attribute>  
+                <xsd:attribute name="env" type="xsd:string">  
+                </xsd:attribute>
+                <xsd:attribute name="suffix" type="xsd:string">  
+                </xsd:attribute>
+        </xsd:complexType>  
+	
+</xsd:schema>
